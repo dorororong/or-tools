@@ -113,6 +113,7 @@ solver = cp_model.CpSolver()
 status = solver.Solve(model)
 
 # timetable for each class
+
 if status == cp_model.OPTIMAL:
     schedule_matrices = [[[None for _ in days] for _ in periods] for _ in classes]
 
